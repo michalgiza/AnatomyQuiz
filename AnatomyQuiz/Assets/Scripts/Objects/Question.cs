@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 public class Question
 {
     public string question;
@@ -10,6 +9,7 @@ public class Question
     public string answerB;
     public string answerC;
     public string answerD;
+    public string correctAnswerSign;
     public PossibleAnswer correctAnswer;
     public MainSubject subjectOfAQuestion;
 
