@@ -21,7 +21,7 @@ public class InitScene : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("MenuScene");
+            SceneManager.LoadScene("QuizScene");
         }
     }
 }
