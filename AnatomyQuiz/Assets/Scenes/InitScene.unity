@@ -181,13 +181,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - question: 
-    answerA: 
-    answerB: 
-    answerC: 
-    answerD: 
+  - question: Co to jest nerka?
+    answerA: "narz\u0105d"
+    answerB: "urz\u0105dzenie"
+    answerC: "pi\u0142ka"
+    answerD: "nic wa\u017Cenego"
     correctAnswer: 0
-    subjectOfAQuestion: 0
+    subjectOfAQuestion: 3
+  - question: "Ile kom\xF3r ma serce?"
+    answerA: 1
+    answerB: 2
+    answerC: 3
+    answerD: 4
+    correctAnswer: 1
+    subjectOfAQuestion: 1
 --- !u!4 &1343506919
 Transform:
   m_ObjectHideFlags: 0

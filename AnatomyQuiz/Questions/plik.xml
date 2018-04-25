@@ -1,0 +1,34 @@
+<ListOfQuestions>
+ <Question>
+<Tresc>Najdłuższą kością jest:</Tresc>
+  <AnswerA>Kość promieniowa</AnswerA>
+  <AnswerB>Kość strzałkowa</AnswerB>
+  <AnswerC>Kość piszczelowa</AnswerC>
+  <AnswerD>Kość udowa</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+ <Question>
+ <Tresc>Ile komór ma serce?</Tresc>
+  <AnswerA>1</AnswerA>
+  <AnswerB>2</AnswerB>
+  <AnswerC>3</AnswerC>
+  <AnswerD>4</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+ <Question>
+<Tresc>Erytrocyty to:</Tresc>
+  <AnswerA>Krwinki czerwone</AnswerA>
+  <AnswerB>Płytki krwii</AnswerB>
+  <AnswerC>Krwinki białe</AnswerC>
+  <AnswerD>Nie istnieje takie coś</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+ <Question>
+ <Tresc>Który enzym trawienny NIE działa w dwunastnicy?</Tresc>
+  <AnswerA>Trypsyna</AnswerA>
+  <AnswerB>Maltaza</AnswerB>
+  <AnswerC>Pepsyna</AnswerC>
+  <AnswerD>Amylaza trzustkowa</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+</ListOfQuestions> 
