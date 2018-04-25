@@ -1,49 +1,41 @@
-# System files
-Thumbs.db
-Thumbs.db.meta
-*.DS_Store
-*.directory
-.vs
-.vscode
+###
+# Unity folders and files
+###
+[Aa]ssets/AssetStoreTools*
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
 
-# Build files
-*.apk
-*.obb
-
-# Lightmaps
-*.exr
-*.exr.meta
-LightmapSnapshot.asset
-LightmapSnapshot.asset.meta
-LightingData.asset
-LightingData.asset.meta
-
-# Visual Studio files
-*.cachefile
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
 *.csproj
-*.pidb
 *.sln
 *.suo
+*.svd
 *.unityproj
 *.user
 *.userprefs
-*.v11
-*.v12
+*.pidb
+.DS_Store
 
-# Folder to exclude
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
-Builds/
-ipch/
-Library/
-obj/
-Temp/
-UWP/
-WindowsStore/
-WS/
-UnityVS/
-UnityVS.meta
-
-# Folders to keep
-!Assets/Vendors/InControl/Source/Debug/
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
