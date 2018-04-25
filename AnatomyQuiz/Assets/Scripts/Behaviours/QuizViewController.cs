@@ -23,28 +23,63 @@ public class QuizViewController : MonoBehaviour
     private Question currentQuestion;
     private Question.PossibleAnswer answer;
     private Color BaseButtonColor;
-    private Color NewColor;
+    private Color GreenColor;
+    private Color RedColor;
+    private float time =0;
 
     //
     private void Start()
     {
         currentQuestion = Singleton.QuizManager.GetRandomQuestion();
-        AssignStrings(currentQuestion.question, currentQuestion.answerA, currentQuestion.answerB, currentQuestion.answerC, currentQuestion.answerD);
+        StartCoroutine(LoadQuestions());
         Singleton.EventManager.AddListener<AnswerClick.AnswerClickResult>(AnswerCheckedBehaviour);
         BaseButtonColor = answerA.color;
-        NewColor = new Color(0, 255, 0);
+        GreenColor = new Color(0, 255, 0);
+        RedColor = new Color(255, 0, 0);
+
     }
 
     //
-    private void AssignStrings(string question, string A, string B, string C, string D)
+    private void Update()
     {
-        questionTekst.text = question;
+        if(Singleton.QuizManager.currentAnswerTimeEnd)
+        {
+            ReloadQuesion();
+            Singleton.QuizManager.currentAnswerTimeEnd = false;
+        }
+    }
+
+    //
+    private void AssignAnswers(string A, string B, string C, string D)
+    {
         answerA_Tekst.text = A;
         answerB_Tekst.text = B;
         answerC_Tekst.text = C;
         answerD_Tekst.text = D;
     }
-    
+
+    //
+    private void AssignQuestion(string question)
+    {
+        questionTekst.text = question;
+    }
+
+    //
+    private IEnumerator LoadQuestions()
+    {
+        AssignQuestion(currentQuestion.question);
+        AssignAnswers(String.Empty, String.Empty, String.Empty, String.Empty);
+
+        while(time < 2f)
+        {
+            time = time + Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        AssignAnswers(currentQuestion.answerA, currentQuestion.answerB, currentQuestion.answerC, currentQuestion.answerD);
+        time = 0f;
+
+    }
+
     //
     private void AnswerCheckedBehaviour(AnswerClick.AnswerClickResult evt)
     {
@@ -53,11 +88,11 @@ public class QuizViewController : MonoBehaviour
     }
 
     //
-    private void ReloadQuesiot()
+    private void ReloadQuesion()
     {
         ResetColor();
         currentQuestion = Singleton.QuizManager.GetRandomQuestion();
-        AssignStrings(currentQuestion.question, currentQuestion.answerA, currentQuestion.answerB, currentQuestion.answerC, currentQuestion.answerD);
+        StartCoroutine(LoadQuestions());
     }
 
     //
@@ -72,14 +107,15 @@ public class QuizViewController : MonoBehaviour
         {
             currentTime += Time.deltaTime;
             currentBlinkFrequency += Time.deltaTime;
-            if(currentBlinkFrequency> blinkFrequency)
+
+            if(currentBlinkFrequency > blinkFrequency)
             {
                 ChangeColors(evt);
                 currentBlinkFrequency = 0f;
             }
             yield return new WaitForEndOfFrame();
         }
-        ReloadQuesiot();
+        ReloadQuesion();
     }
 
     //
@@ -89,25 +125,40 @@ public class QuizViewController : MonoBehaviour
 
         if(evt.answer == correctAnswer)
         {
-            Blink(ButtonRelationToAnswer(evt.answer));
+            Blink(ButtonRelationToAnswer(evt.answer), true);
         }
         else
         {
-            Blink(ButtonRelationToAnswer(correctAnswer));
-            ButtonRelationToAnswer(evt.answer).color = new Color(255,0,0);
+            Blink(ButtonRelationToAnswer(evt.answer), false);
+            Blink(ButtonRelationToAnswer(correctAnswer), true);
         }
     }
 
     //
-    private void Blink(Image image)
+    private void Blink(Image image, bool good)
     {
-        if(image.color == BaseButtonColor)
+        if (good)
         {
-            image.color = NewColor;
+            if (image.color == BaseButtonColor)
+            {
+                image.color = GreenColor;
+            }
+            else
+            {
+                image.color = BaseButtonColor;
+            }
         }
         else
         {
-            image.color = BaseButtonColor;
+            if (image.color == BaseButtonColor)
+            {
+                image.color = RedColor;
+            }
+            else
+            {
+                image.color = BaseButtonColor;
+            }
+
         }
     }
 

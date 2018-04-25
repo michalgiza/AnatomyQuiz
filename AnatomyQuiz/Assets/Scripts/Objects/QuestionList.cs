@@ -12,7 +12,7 @@ public class QuestionList : MonoBehaviour
     void Start ()
     {
         //należay zmienić ścieżkę na waszą lokalną
-        ReadXmlFile(@"E:\git_projekty\anatomyQuiz\AnatomyQuiz\AnatomyQuiz\AnatomyQuiz\Questions\plik.xml");
+        ReadXmlFile(@"C:\Users\Edziu\Documents\GitHub\AnatomyQuizRepo\AnatomyQuiz\AnatomyQuiz\Questions\plik.xml");
         Singleton.QuizManager.questions = this.questions;
 	}
 

@@ -8,6 +8,8 @@ public class QuizManager : BaseSingletonObject
     //
     public Question[] questions;
     public bool isCorrect;
+    public float timeToAnswer = 10f;
+    public bool currentAnswerTimeEnd;
 
     //
     private Question currentQuestion;
@@ -20,6 +22,7 @@ public class QuizManager : BaseSingletonObject
         unAnsweredQuestions = questions.ToList();
         score = 0;
         isCorrect = false;
+        currentAnswerTimeEnd = false;
     }
 
     public Question GetRandomQuestion()
