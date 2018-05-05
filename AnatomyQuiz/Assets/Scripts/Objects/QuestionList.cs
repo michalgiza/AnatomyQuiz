@@ -11,15 +11,16 @@ public class QuestionList : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        //należay zmienić ścieżkę na waszą lokalną
-        ReadXmlFile(@"C:\Users\Edziu\Documents\GitHub\AnatomyQuizRepo\AnatomyQuiz\AnatomyQuiz\Questions\plik.xml");
+        string path = @"Questions\plik.xml";
+        
+        ReadXmlFile(path);
         Singleton.QuizManager.questions = this.questions;
 	}
 
     //
     private void ReadXmlFile(string path)
     {
-        XDocument doc = XDocument.Load(path);
+        XDocument doc = XDocument.Load(Path.GetFullPath(path));
         var questionsArray = doc.Descendants("Question").Select(x => new Question
         {
             question = x.Element("Tresc").Value,
