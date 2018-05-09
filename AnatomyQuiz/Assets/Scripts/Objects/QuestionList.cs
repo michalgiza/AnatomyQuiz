@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using System.Xml;
 
 public class QuestionList : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class QuestionList : MonoBehaviour
     //
     private void ReadXmlFile(string path)
     {
+
+
         XDocument doc = XDocument.Load(Path.GetFullPath(path));
         var questionsArray = doc.Descendants("Question").Select(x => new Question
         {
@@ -28,11 +31,12 @@ public class QuestionList : MonoBehaviour
             answerB = x.Element("AnswerB").Value,
             answerC = x.Element("AnswerC").Value,
             answerD = x.Element("AnswerD").Value,
-            correctAnswerSign=x.Element("PoprawnaOdpowiedz").Value
+            correctAnswerSign = x.Element("PoprawnaOdpowiedz").Value
 
         }).ToArray();
         StringToEnum(questionsArray);
-         questions = questionsArray;
+        questions = questionsArray;
+
     }
 
     //
