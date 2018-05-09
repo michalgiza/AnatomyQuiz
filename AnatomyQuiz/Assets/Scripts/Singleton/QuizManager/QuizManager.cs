@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuizManager : BaseSingletonObject
 {
     //
     public Question[] questions;
     public bool isCorrect;
-    public float timeToAnswer = 10f;
+    public float timeToAnswer = 8f;
     public bool currentAnswerTimeEnd;
+    public float QuestionOffset;
 
     //
     private Question currentQuestion;
@@ -23,6 +25,7 @@ public class QuizManager : BaseSingletonObject
         score = 0;
         isCorrect = false;
         currentAnswerTimeEnd = false;
+        QuestionOffset = 2f;
     }
 
     public Question GetRandomQuestion()
@@ -67,6 +70,15 @@ public class QuizManager : BaseSingletonObject
         {
             RemovePointsFromScore(50);
             isCorrect = false;
+        }
+    }
+
+    public void SetButtonsActive(bool set)
+    {
+        AnswerClick[] buttons = Object.FindObjectsOfType<AnswerClick>();
+        foreach (AnswerClick button in buttons)
+        {
+            button.GetComponent<Button>().interactable = set;
         }
     }
 
