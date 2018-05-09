@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// mkusz 28.06.2017 based on : http://www.willrmiller.com/?p=87
+// based on : http://www.willrmiller.com/?p=87
 public class EventManager : BaseSingletonObject
 {
     public delegate void EventDelegate<T>(T e);

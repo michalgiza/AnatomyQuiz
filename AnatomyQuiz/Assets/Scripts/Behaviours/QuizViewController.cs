@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +17,7 @@ public class QuizViewController : MonoBehaviour
     public Image answerC;
     public Image answerD;
 
+    public GameObject Clock;
 
     //
     private Question currentQuestion;
@@ -30,6 +30,7 @@ public class QuizViewController : MonoBehaviour
     //
     private void Start()
     {
+        Singleton.QuizManager.SetButtonsActive(false);
         currentQuestion = Singleton.QuizManager.GetRandomQuestion();
         StartCoroutine(LoadQuestions());
         Singleton.EventManager.AddListener<AnswerClick.AnswerClickResult>(AnswerCheckedBehaviour);
@@ -69,12 +70,14 @@ public class QuizViewController : MonoBehaviour
     {
         AssignQuestion(currentQuestion.question);
         AssignAnswers(String.Empty, String.Empty, String.Empty, String.Empty);
+        Clock.SetActive(true);
 
-        while(time < 2f)
+        while (time < Singleton.QuizManager.QuestionOffset)
         {
             time = time + Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
+        Singleton.QuizManager.SetButtonsActive(true);
         AssignAnswers(currentQuestion.answerA, currentQuestion.answerB, currentQuestion.answerC, currentQuestion.answerD);
         time = 0f;
 
@@ -83,7 +86,9 @@ public class QuizViewController : MonoBehaviour
     //
     private void AnswerCheckedBehaviour(AnswerClick.AnswerClickResult evt)
     {
+        Singleton.QuizManager.SetButtonsActive(false);
         Singleton.QuizManager.CheckAnswer(evt.answer);
+        Clock.GetComponent<Counter>().StopClock(true);
         StartCoroutine(AfterAnswerBehawiour(evt));
     }
 
@@ -92,6 +97,7 @@ public class QuizViewController : MonoBehaviour
     {
         ResetColor();
         currentQuestion = Singleton.QuizManager.GetRandomQuestion();
+        Clock.SetActive(false);
         StartCoroutine(LoadQuestions());
     }
 

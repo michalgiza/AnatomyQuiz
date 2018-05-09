@@ -3527,6 +3527,7 @@ MonoBehaviour:
   answerB: {fileID: 1626731163}
   answerC: {fileID: 676276922}
   answerD: {fileID: 235533326}
+  Clock: {fileID: 1889820274}
 --- !u!4 &1743795657
 Transform:
   m_ObjectHideFlags: 0
