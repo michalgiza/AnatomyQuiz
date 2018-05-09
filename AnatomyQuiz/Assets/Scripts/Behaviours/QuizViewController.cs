@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class QuizViewController : MonoBehaviour
     public Text answerB_Tekst;
     public Text answerC_Tekst;
     public Text answerD_Tekst;
+    public TextMeshProUGUI Score;
 
     public Image answerA;
     public Image answerB;
@@ -18,6 +20,7 @@ public class QuizViewController : MonoBehaviour
     public Image answerD;
 
     public GameObject Clock;
+    public GameObject EndGameBoard;
 
     //
     private Question currentQuestion;
@@ -32,12 +35,12 @@ public class QuizViewController : MonoBehaviour
     {
         Singleton.QuizManager.SetButtonsActive(false);
         currentQuestion = Singleton.QuizManager.GetRandomQuestion();
+        Singleton.QuizManager.LivesLeft = Singleton.QuizManager.LivesMax;
         StartCoroutine(LoadQuestions());
         Singleton.EventManager.AddListener<AnswerClick.AnswerClickResult>(AnswerCheckedBehaviour);
         BaseButtonColor = answerA.color;
         GreenColor = new Color(0, 255, 0);
         RedColor = new Color(255, 0, 0);
-
     }
 
     //
@@ -48,6 +51,7 @@ public class QuizViewController : MonoBehaviour
             ReloadQuesion();
             Singleton.QuizManager.currentAnswerTimeEnd = false;
         }
+        Score.text = "Wynik: " + Singleton.QuizManager.score;
     }
 
     //
@@ -68,18 +72,22 @@ public class QuizViewController : MonoBehaviour
     //
     private IEnumerator LoadQuestions()
     {
-        AssignQuestion(currentQuestion.question);
-        AssignAnswers(String.Empty, String.Empty, String.Empty, String.Empty);
-        Clock.SetActive(true);
-
-        while (time < Singleton.QuizManager.QuestionOffset)
+        if (Singleton.QuizManager.LivesLeft > 0)
         {
-            time = time + Time.deltaTime;
-            yield return new WaitForEndOfFrame();
+            Singleton.QuizManager.SetButtonsActive(false);
+            AssignQuestion(currentQuestion.question);
+            AssignAnswers(String.Empty, String.Empty, String.Empty, String.Empty);
+            Clock.SetActive(true);
+
+            while (time < Singleton.QuizManager.QuestionOffset)
+            {
+                time = time + Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+            Singleton.QuizManager.SetButtonsActive(true);
+            AssignAnswers(currentQuestion.answerA, currentQuestion.answerB, currentQuestion.answerC, currentQuestion.answerD);
+            time = 0f;
         }
-        Singleton.QuizManager.SetButtonsActive(true);
-        AssignAnswers(currentQuestion.answerA, currentQuestion.answerB, currentQuestion.answerC, currentQuestion.answerD);
-        time = 0f;
 
     }
 
@@ -87,7 +95,10 @@ public class QuizViewController : MonoBehaviour
     private void AnswerCheckedBehaviour(AnswerClick.AnswerClickResult evt)
     {
         Singleton.QuizManager.SetButtonsActive(false);
-        Singleton.QuizManager.CheckAnswer(evt.answer);
+        if(Singleton.QuizManager.CheckAnswer_AndIfItsEnd(evt.answer))
+        {
+            EndGame();
+        }
         Clock.GetComponent<Counter>().StopClock(true);
         StartCoroutine(AfterAnswerBehawiour(evt));
     }
@@ -127,17 +138,21 @@ public class QuizViewController : MonoBehaviour
     //
     private void ChangeColors(AnswerClick.AnswerClickResult evt)
     {
-        Question.PossibleAnswer correctAnswer = currentQuestion.correctAnswer;
-
-        if(evt.answer == correctAnswer)
+        if(Singleton.QuizManager.isCorrect)
         {
             Blink(ButtonRelationToAnswer(evt.answer), true);
         }
         else
         {
             Blink(ButtonRelationToAnswer(evt.answer), false);
-            Blink(ButtonRelationToAnswer(correctAnswer), true);
+            Blink(ButtonRelationToAnswer(currentQuestion.correctAnswer), true);
         }
+    }
+
+    private void EndGame()
+    {
+        EndGameBoard.SetActive(true);
+        //Time.timeScale = 0;
     }
 
     //

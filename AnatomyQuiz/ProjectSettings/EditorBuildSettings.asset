@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuizScene.unity
     guid: 098dffa5c4addbe45bd97262b5dbbfe7
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: ea518dfc0bf27ef46a5a59af320faf06
