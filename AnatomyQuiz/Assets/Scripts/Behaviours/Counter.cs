@@ -42,10 +42,10 @@ public class Counter : MonoBehaviour
         if (RunningClock)
         {
             time -= Time.deltaTime;
-            Debug.Log(Time.deltaTime.ToString());
             counterText.text = Mathf.Ceil(time).ToString();
             float proportion = time / Singleton.QuizManager.timeToAnswer;
             filledImage.fillAmount = proportion;
+            Singleton.QuizManager.currentQuestionTime = time;
             //foreImage.color = Color.Lerp(startColor, endColor, proportion);
             if (time < 0.001f)
             {
