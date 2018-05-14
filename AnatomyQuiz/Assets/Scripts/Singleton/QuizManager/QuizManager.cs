@@ -6,16 +6,24 @@ using UnityEngine.UI;
 
 public class QuizManager : BaseSingletonObject
 {
+    //życia, licznik pytan, punkty, po odpowiedzeniu na wszystkie pytania gratulacje
     //
     public Question[] questions;
     public bool isCorrect;
     public float timeToAnswer = 8f;
     public bool currentAnswerTimeEnd;
+    public float currentQuestionTime;
     public float QuestionOffset;
+    public int LivesMax = 3;
+    public int LivesLeft;
+
+    //
+    public delegate void BadAnswer();
+    public event BadAnswer OnBadAnswer = delegate { };
 
     //
     private Question currentQuestion;
-    private int score;
+    public int score;
     private List<Question> unAnsweredQuestions;
 
     // Use this for initialization
@@ -48,31 +56,46 @@ public class QuizManager : BaseSingletonObject
     {
         score += points;
     }
+
     public void RemovePointsFromScore(int points)
     {
         score -= points;
     }
 
+    //
     public void EndGame()
     {
         score = 0;
         unAnsweredQuestions = questions.ToList();
     }
 
-    public void CheckAnswer(Question.PossibleAnswer answer)
+    //
+    public bool CheckAnswer_AndIfItsEnd(Question.PossibleAnswer answer)
     {
+        int score = (int)currentQuestionTime * 10;
         if (answer == currentQuestion.correctAnswer)
         {
-            AddPointsToScore(50);
+            AddPointsToScore(score);
             isCorrect = true;
+            return false;
         }
         else
         {
-            RemovePointsFromScore(50);
             isCorrect = false;
+            OnBadAnswer();
+            LivesLeft -= 1;
+            if (LivesLeft == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 
+    //
     public void SetButtonsActive(bool set)
     {
         AnswerClick[] buttons = Object.FindObjectsOfType<AnswerClick>();
@@ -81,5 +104,5 @@ public class QuizManager : BaseSingletonObject
             button.GetComponent<Button>().interactable = set;
         }
     }
-
+    
 }
