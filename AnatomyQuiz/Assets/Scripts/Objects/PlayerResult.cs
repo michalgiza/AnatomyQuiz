@@ -11,6 +11,6 @@ public class PlayerResult
     [XmlElement("Date")]
     public string Date { get; set; }
     [XmlElement("Score")]
-    public string Score { get; set; }
+    public int Score { get; set; }
 	
 }
