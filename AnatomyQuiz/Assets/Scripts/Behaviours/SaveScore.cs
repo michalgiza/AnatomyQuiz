@@ -17,33 +17,40 @@ public class SaveScore : MonoBehaviour {
     public GameObject EndGameBoard;
     public TextMeshProUGUI Score;
     public TextMeshProUGUI NewHighScore;
+    public GameObject DialogBox;
     private PlayerResultList playerResultList;
+    public Button OK;
 
 
     private int score;
 
-    
+
 
     public void ShowSaveScoreWindow()
     {
         SaveScoreBoard.SetActive(true);
         EndGameBoard.SetActive(false);
         score = Singleton.QuizManager.score;
-        Score.text +=  score;
-        if(GetMax(score))
+        Score.text += score;
+        if (GetMax(score))
         {
-            NewHighScore.text +="Gratulacje! Ustanowiles nowy rekord!";
+            NewHighScore.text += "Gratulacje! Ustanowiles nowy rekord!";
         }
         else
         {
             NewHighScore.text += "";
         }
-        
+
     }
 
     public void SaveScoreToXml()
     {
-        
+        if (PlayerName.text == "" || PlayerName.text == null)
+        {
+            DialogBox.SetActive(true);
+            return;
+            
+        }
         DateTime today = DateTime.Now;
         string path = @"FileXML\highScore.xml";
         XmlDocument xdoc = new XmlDocument();
@@ -55,7 +62,7 @@ public class SaveScore : MonoBehaviour {
         XmlElement xScore = xdoc.CreateElement("Score");
 
         xPlayerName.InnerText = PlayerName.text;
-        xDateTime.InnerText = String.Format("{0}-{1}-{2}",today.Day,today.Month,today.Year);
+        xDateTime.InnerText = String.Format("{0}",today.ToShortDateString());
         xScore.InnerText = score.ToString();
 
         xResult.AppendChild(xPlayerName);
@@ -83,6 +90,11 @@ public class SaveScore : MonoBehaviour {
             return false;
         else
             return true;
+    }
+
+    public void ClickButtonOk()
+    {
+        DialogBox.SetActive(false);
     }
 
 }
