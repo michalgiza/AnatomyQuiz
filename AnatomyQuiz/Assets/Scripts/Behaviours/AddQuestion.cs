@@ -15,11 +15,18 @@ public class AddQuestion : MonoBehaviour {
 	public InputField AnswearC;
 	public InputField AnswearD;
     public Dropdown CorrectAnswer;
+    public GameObject DialogBox;
 
     //
 	public void GetData()
 	{
-        string path = @"Questions\plik.xml";
+        if((Content.text == "") || (AnswearD.text == "") || (AnswearC.text=="") || (AnswearB.text=="") || (AnswearA.text == "") ||
+           (Content.text == null) || (AnswearD.text == null) || (AnswearC.text == null) || (AnswearB.text == null) || (AnswearA.text == null))
+        {
+            DialogBox.SetActive(true);
+            return;
+        }
+        string path = @"FileXML\questions.xml";
         int correctAnswerInt = CorrectAnswer.value;
 
 
@@ -82,5 +89,10 @@ public class AddQuestion : MonoBehaviour {
         return signCorrectAnswer;
     }
 
-    
+    //
+    public void ClickButtonOk()
+    {
+        DialogBox.SetActive(false);
+    }
+
 }

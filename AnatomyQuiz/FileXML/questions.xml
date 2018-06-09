@@ -1,0 +1,634 @@
+<ListOfQuestions>
+ <Question>
+<Tresc>Najdłuższą kością jest:</Tresc>
+  <AnswerA>Kość promieniowa</AnswerA>
+  <AnswerB>Kość strzałkowa</AnswerB>
+  <AnswerC>Kość piszczelowa</AnswerC>
+  <AnswerD>Kość udowa</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+ <Question>
+ <Tresc>Ile komór ma serce?</Tresc>
+  <AnswerA>1</AnswerA>
+  <AnswerB>2</AnswerB>
+  <AnswerC>3</AnswerC>
+  <AnswerD>4</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+ <Question>
+<Tresc>Erytrocyty to:</Tresc>
+  <AnswerA>Krwinki czerwone</AnswerA>
+  <AnswerB>Płytki krwii</AnswerB>
+  <AnswerC>Krwinki białe</AnswerC>
+  <AnswerD>Nie istnieje takie coś</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+ <Question>
+ <Tresc>Który enzym trawienny NIE działa w dwunastnicy?</Tresc>
+  <AnswerA>Trypsyna</AnswerA>
+  <AnswerB>Maltaza</AnswerB>
+  <AnswerC>Pepsyna</AnswerC>
+  <AnswerD>Amylaza trzustkowa</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Która z poniższych kości nie należy do szkieletu osiowego?</Tresc>
+  <AnswerA>Mostek</AnswerA>
+  <AnswerB>Czaszka</AnswerB>
+  <AnswerC>Łopatka</AnswerC>
+  <AnswerD>Żebra</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile kręgów ma odcinek szyjny kręgosłupa?</Tresc>
+  <AnswerA>5</AnswerA>
+  <AnswerB>7</AnswerB>
+  <AnswerC>9</AnswerC>
+  <AnswerD>12</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile par żeber ma człowiek?</Tresc>
+  <AnswerA>8</AnswerA>
+  <AnswerB>12</AnswerB>
+  <AnswerC>16</AnswerC>
+  <AnswerD>24</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jak nazywa się 2 ostatnie pary żeber?</Tresc>
+  <AnswerA>Wolne</AnswerA>
+  <AnswerB>Prawdziwe</AnswerB>
+  <AnswerC>Rzekome</AnswerC>
+  <AnswerD>Nie mają nazwy</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Płaszczyzna strzałkowa:</Tresc>
+  <AnswerA>Dzieli ciało na część przednią i tylną</AnswerA>
+  <AnswerB>Dzieli ciało na część górną i dolną</AnswerB>
+  <AnswerC>Określona jest przez oś strzałkową i poprzeczną</AnswerC>
+  <AnswerD>Określona jest przez oś strzałkową i pionową</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Płaszczyzna czołowa utworzona jest przez oś:</Tresc>
+  <AnswerA>Poprzeczną i pionową</AnswerA>
+  <AnswerB>Poprzeczną i strzałkową</AnswerB>
+  <AnswerC>Pionową i strzałkową</AnswerC>
+  <AnswerD>Poprzeczną, pionową i strzałkową</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Płaszczyzna poprzeczna:</Tresc>
+  <AnswerA>Jest utworzona przez oś poprzeczną i pionową</AnswerA>
+  <AnswerB>Jest również nazywana płaszczyzną poziomą</AnswerB>
+  <AnswerC>Biegnie równolegle do czoła i prostopadle do płaszczyzny strzałkowej</AnswerC>
+  <AnswerD>Dzieli ciało na część prawą i lewą</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Zaznacz prawidłową odpowiedź</Tresc>
+  <AnswerA>Oś poprzeczna odpowiada za ruch zginania i prostowania</AnswerA>
+  <AnswerB>Oś strzałkowa odpowiada za ruch nawracanie i odwracanie</AnswerB>
+  <AnswerC>Oś poprzeczna wyznacza kierunek góra - dół</AnswerC>
+  <AnswerD>Oś strzałkowa wyznacza kierunek góra - dół</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jaki procent masy kośca człowieka stanowi woda?</Tresc>
+  <AnswerA>8%</AnswerA>
+  <AnswerB>10%</AnswerB>
+  <AnswerC>25%</AnswerC>
+  <AnswerD>65%</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Komórki resorbujące kość, uczestniczące w prawidłowym procesie przebudowy tkanki kostnej to:</Tresc>
+  <AnswerA>Osteoplasty</AnswerA>
+  <AnswerB>Osteoklasty</AnswerB>
+  <AnswerC>Osteoblasty</AnswerC>
+  <AnswerD>Osteocyty</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Skurcz auksotoniczny mięśnia charakteryzuje się:</Tresc>
+  <AnswerA>Skróceniem całego mięśnia przy stałym jego napięciu</AnswerA>
+  <AnswerB>Wzrostem napięcia mięśnia bez zmiany jego długości</AnswerB>
+  <AnswerC>Równoczesną zmianą długości i napięcia mięśnia</AnswerC>
+  <AnswerD>Stałą pręskością skracania mięśnia</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Wskaż błędną odpowiedź:</Tresc>
+  <AnswerA>Miofibryle składają się z miofilamentów aktynowych i miozynowych</AnswerA>
+  <AnswerB>Jenda miofibryla w obrębie jednego sarkomeru zawiera więcej elementów miozynowych niż aktynowych</AnswerB>
+  <AnswerC>W grubszych elementach istnieją wystające nitki - tzw. mostki</AnswerC>
+  <AnswerD>Filamenty miozynowe są grubsze od aktynowych</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile litrów krwi ma w sobie człowiek o przeciętnej masie ciała?</Tresc>
+  <AnswerA>Poniżej 2l</AnswerA>
+  <AnswerB>Ok. 3-4l</AnswerB>
+  <AnswerC>Ok. 5-6l</AnswerC>
+  <AnswerD>Ok. 7-8l</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jaką nazwę mają czerwone krwinki?</Tresc>
+  <AnswerA>Erytrocyty</AnswerA>
+  <AnswerB>Trombocyty</AnswerB>
+  <AnswerC>Leukocyty</AnswerC>
+  <AnswerD>Płytki krwi</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Najmniejsza kość w organizmie człowieka to:</Tresc>
+  <AnswerA>Kość śródstopia</AnswerA>
+  <AnswerB>Kość guziczna</AnswerB>
+  <AnswerC>Kość śródręcza</AnswerC>
+  <AnswerD>Strzemiączko</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile mięśni posiada człowiek?</Tresc>
+  <AnswerA>Poniżej 200</AnswerA>
+  <AnswerB>Około 250</AnswerB>
+  <AnswerC>Około 400</AnswerC>
+  <AnswerD>Ponad 600</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Które mięśnie są odpowiedzialne za poprawną postawę?</Tresc>
+  <AnswerA>Mięśnie rąk</AnswerA>
+  <AnswerB>Mięśnie ud</AnswerB>
+  <AnswerC>Mięśnie brzucha</AnswerC>
+  <AnswerD>Mięśnie krzyżowe</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile kości ma dorosły człowiek?</Tresc>
+  <AnswerA>68</AnswerA>
+  <AnswerB>179</AnswerB>
+  <AnswerC>206</AnswerC>
+  <AnswerD>308</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Gdzie znajduje się wątroba?</Tresc>
+  <AnswerA>Po prawej stronie jamy brzusznej</AnswerA>
+  <AnswerB>Po lewej stronie jamy brzusznej</AnswerB>
+  <AnswerC>W środkowej części jamy brzusznej</AnswerC>
+  <AnswerD>Pod żołądkiem</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Czym jest kardiomiopatia?</Tresc>
+  <AnswerA>Skurczeniem mięśni serca</AnswerA>
+  <AnswerB>Zgrubieniem mięśni serca</AnswerB>
+  <AnswerC>Zmniejszeniem wielkości serca</AnswerC>
+  <AnswerD>Zwiększeniem wielkości serca</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Z jaką prędkością rozchodzą się impulsy nerwowe w ciele zdrowego człowieka?</Tresc>
+  <AnswerA>0,35 km/h</AnswerA>
+  <AnswerB>3,5 km/h</AnswerB>
+  <AnswerC>35 km/h</AnswerC>
+  <AnswerD>350 km/h</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Co jest odpowiedzialne za wytwarzanie insuliny?</Tresc>
+  <AnswerA>Komórki alfa trzustki</AnswerA>
+  <AnswerB>Komórki beta trzustki</AnswerB>
+  <AnswerC>Podwzgórze</AnswerC>
+  <AnswerD>Nadnercza</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>W około 12 roku życia zanika:</Tresc>
+  <AnswerA>Grasica</AnswerA>
+  <AnswerB>Szyszynka</AnswerB>
+  <AnswerC>Tarczyca</AnswerC>
+  <AnswerD>Przysadka mózgowa</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Prolaktyna to hormon, który:</Tresc>
+  <AnswerA>Pobudza produkcję mleka</AnswerA>
+  <AnswerB>Pobudza rozwój gonad</AnswerB>
+  <AnswerC>Działa antagonistycznie do adrenaliny</AnswerC>
+  <AnswerD>Pobudza skurcze mięśni gładkich i wydzielanie mleka</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który z poniższych składników nie występuje fizjologicznie w moczu?</Tresc>
+  <AnswerA>Woda</AnswerA>
+  <AnswerB>Sole nieorganiczne</AnswerB>
+  <AnswerC>Glukoza</AnswerC>
+  <AnswerD>Kwas moczowy</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który płat półkul mózgu odpowiada za zdolność abstrakcyjnego myślenia?</Tresc>
+  <AnswerA>Płat potyliczny</AnswerA>
+  <AnswerB>Płat ciemnieniowy</AnswerB>
+  <AnswerC>Móżdżek</AnswerC>
+  <AnswerD>Płat czołowy</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który płat półkul mózgu odpowiada za przetwarzanie informacji z receptorów dotyku?</Tresc>
+  <AnswerA>Płat ciemieniowy</AnswerA>
+  <AnswerB>Płat skroniowy</AnswerB>
+  <AnswerC>Płat potyliczny</AnswerC>
+  <AnswerD>Płat czołowy</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który płat półkul mózgu ma związek ze wzrokiem?</Tresc>
+  <AnswerA>Móżdżek</AnswerA>
+  <AnswerB>Płat ciemieniowy</AnswerB>
+  <AnswerC>Płat potyliczny</AnswerC>
+  <AnswerD>Płat czołowy</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który płat półkul mózgu odpowiada za obszary sluchu oraz rozumienie mowy?</Tresc>
+  <AnswerA>Móżdżek</AnswerA>
+  <AnswerB>Płat ciemieniowy</AnswerB>
+  <AnswerC>Płat potyliczny</AnswerC>
+  <AnswerD>Płat skroniowy</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który płat półkul mózgu kontroluje układ ruchu?</Tresc>
+  <AnswerA>Móżdżek</AnswerA>
+  <AnswerB>Płat czołowy</AnswerB>
+  <AnswerC>Płat potyliczny</AnswerC>
+  <AnswerD>Płat skroniowy</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Funkcjonalnie lewa półkula mózgu odpowiedzialna jest za:</Tresc>
+  <AnswerA>Pisanie</AnswerA>
+  <AnswerB>Intuicję</AnswerB>
+  <AnswerC>Kreatywność</AnswerC>
+  <AnswerD>Sztukę</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Funkcjonalnie prawa półkula mózgu odpowiedzialna jest za:</Tresc>
+  <AnswerA>Myślenie analityczne</AnswerA>
+  <AnswerB>Język</AnswerB>
+  <AnswerC>Intuicję</AnswerC>
+  <AnswerD>Pisanie</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Gruczoły układu pokarmowego to:</Tresc>
+  <AnswerA>Dwunastnica, trzustka, wątroba</AnswerA>
+  <AnswerB>Trzustka, wątroba, śledziona, grasica</AnswerB>
+  <AnswerC>Trzustka, wątroba, ślinianki</AnswerC>
+  <AnswerD>Wątroba, dwunastnica, przysadka mózgowa</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Co rozbija krótsze łańcuchy polipeptydowe?</Tresc>
+  <AnswerA>Tryosynogen i chymotrypsynogen</AnswerA>
+  <AnswerB>Trypsyna i chymotrypsyna</AnswerB>
+  <AnswerC>Kwas solny</AnswerC>
+  <AnswerD>Żółć wątrobowa</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>W skład śliny wchodzi:</Tresc>
+  <AnswerA>100% wody</AnswerA>
+  <AnswerB>98% wody, amelaza ślinowa i sole mineralne</AnswerB>
+  <AnswerC>50% wody, amelaza ślinowa i sole mineralne</AnswerC>
+  <AnswerD>50% wody, sole mineralne i ptialina</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Żółć produkowana jest w:</Tresc>
+  <AnswerA>Wątrobie</AnswerA>
+  <AnswerB>Trzustce</AnswerB>
+  <AnswerC>Żołądku</AnswerC>
+  <AnswerD>Dwunastnicy</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Gdzie zachodzi trawienie tłuszczy?</Tresc>
+  <AnswerA>W jelicie cienkim</AnswerA>
+  <AnswerB>W żołądku</AnswerB>
+  <AnswerC>W jamie ustnej</AnswerC>
+  <AnswerD>W dwunastnicy</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jelito grube dzieli się na:</Tresc>
+  <AnswerA>Dwunastnicę, kątnicę i odbyt</AnswerA>
+  <AnswerB>Jelito czcze, jelito kręte i dwunastnicę</AnswerB>
+  <AnswerC>Odbytnicę, kątnicę i okrężnicę</AnswerC>
+  <AnswerD>Okrężnicę, kątnicę i odbyt</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Szkliwo zęba okrywa:</Tresc>
+  <AnswerA>Zębodół</AnswerA>
+  <AnswerB>Dziąsło</AnswerB>
+  <AnswerC>Miazgę</AnswerC>
+  <AnswerD>Zębinę</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Czubek oraz boki języka są wrażliwe na smak:</Tresc>
+  <AnswerA>Słodki i gorzki</AnswerA>
+  <AnswerB>Słony i kwaśny</AnswerB>
+  <AnswerC>Słodki i kwaśny</AnswerC>
+  <AnswerD>Gorzki i słony</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Główna rola jelita grubego to:</Tresc>
+  <AnswerA>Absorbcja wody i trawienie resztek pokarmu</AnswerA>
+  <AnswerB>Trawienie resztek pokarmu i zagęszczanie mas kałowych</AnswerB>
+  <AnswerC>Zagęszczanie mas kałowych i absorbcja wody</AnswerC>
+  <AnswerD>Pobieranie mikroelementów i zagęszczanie mas kałowych</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Pokarm miesza się z żółcią z wątroby oraz sokiem trzustkowym w:</Tresc>
+  <AnswerA>Jelicie czczym</AnswerA>
+  <AnswerB>Jelicie krętym</AnswerB>
+  <AnswerC>Wątrobie</AnswerC>
+  <AnswerD>Dwunastnicy</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Wyróżniamy wymianę gazową:</Tresc>
+  <AnswerA>Wewnętrzną</AnswerA>
+  <AnswerB>Zewnętrzną</AnswerB>
+  <AnswerC>Wewnętrzną i zewnętrzną</AnswerC>
+  <AnswerD>Żadna z powyższych odpowiedzi nie jest poprawna</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Błona ochraniająca płuca przed tarciem to:</Tresc>
+  <AnswerA>Błona śluzowa</AnswerA>
+  <AnswerB>Opłucna</AnswerB>
+  <AnswerC>Błona nabłonkowa</AnswerC>
+  <AnswerD>Żadna z powyższych</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Układ odechowy zaczyna się od:</Tresc>
+  <AnswerA>Jamy nosowej</AnswerA>
+  <AnswerB>Krtani</AnswerB>
+  <AnswerC>Jamy ustnej</AnswerC>
+  <AnswerD>Tchawicy</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Z ilu pęcherzyków zbudowane są płuca?</Tresc>
+  <AnswerA>Ok. 500 tysięcy</AnswerA>
+  <AnswerB>Ok. 500 milionów</AnswerB>
+  <AnswerC>Ok. 100 milionów</AnswerC>
+  <AnswerD>Ok. 850 tysięcy</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Który ze składników nie jest transportowany przez krew?</Tresc>
+  <AnswerA>Glikogen</AnswerA>
+  <AnswerB>Mocznik</AnswerB>
+  <AnswerC>Przeciwciała</AnswerC>
+  <AnswerD>Fibrynogen</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Dwitlenek węgla jest transportowany we krwi:</Tresc>
+  <AnswerA>Tylko dzięki erytrocytom</AnswerA>
+  <AnswerB>Wyłącznie w osoczu</AnswerB>
+  <AnswerC>Dzięki osoczu i czerwonym krwinkom</AnswerC>
+  <AnswerD>Żadna z odpowiedzi nie jest poprawna</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Podanie surowicy odpornościowej w postaci gotowych przeciwciał to przykład:</Tresc>
+  <AnswerA>Czynnej i naturalnej odporności swoistej</AnswerA>
+  <AnswerB>Czynnej i sztucznej odporności swoistej</AnswerB>
+  <AnswerC>Biernej i sztucznej odporności swoistej</AnswerC>
+  <AnswerD>Biernej i naturalnej odporności swoistej</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jaka jest cecha współna w budowie tętnicy i żyły?</Tresc>
+  <AnswerA>Są tak samo elastyczne</AnswerA>
+  <AnswerB>Obie mają zastawki</AnswerB>
+  <AnswerC>Obie transportują krew utlenowaną</AnswerC>
+  <AnswerD>Obie posiadają błonę zewnętrzną, warstwę mięśniową i śródbłonek</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Krwinki czerwone:</Tresc>
+  <AnswerA>Nie mają jądra komórkowego</AnswerA>
+  <AnswerB>Mają jednopłatowe jądro komórkowe</AnswerB>
+  <AnswerC>Mają jedno kuliste jądro komórkowe</AnswerC>
+  <AnswerD>Mają wiele jąder komórkowych</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Co dzieli komory serca?</Tresc>
+  <AnswerA>Gruba wartswa włókien</AnswerA>
+  <AnswerB>Przegroda serca</AnswerB>
+  <AnswerC>Przedsionki</AnswerC>
+  <AnswerD>Wał mięśniowy</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Które z naczyń krwionośnych są najbardziej elastyczne?</Tresc>
+  <AnswerA>Tętnica</AnswerA>
+  <AnswerB>Tętniczki</AnswerB>
+  <AnswerC>Żyła</AnswerC>
+  <AnswerD>Naczynia włosowate</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Osocze krwi:</Tresc>
+  <AnswerA>Nie warunkuje grupy krwi u człowieka</AnswerA>
+  <AnswerB>Nie zwalcza czynnie bakterii</AnswerB>
+  <AnswerC>Nie przenosi dwutlenku węgla</AnswerC>
+  <AnswerD>Nie decyduje o krzepliwości krwi</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Które struktury tworzą mechaniczną barierę dla mikroorganizmów?</Tresc>
+  <AnswerA>Limfocyty T</AnswerA>
+  <AnswerB>Limfocyty B</AnswerB>
+  <AnswerC>Naczynia limfatyczne</AnswerC>
+  <AnswerD>Węzły limfatyczne</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>By-passy stosowane są u osób z:</Tresc>
+  <AnswerA>Wysokim cholesterolem</AnswerA>
+  <AnswerB>Cukrzycą</AnswerB>
+  <AnswerC>Niskim ciśnieniem</AnswerC>
+  <AnswerD>Chorobą wieńcową</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Konflikt serologiczny powstaje gdy:</Tresc>
+  <AnswerA>Matka i ojciec mają tę samą grupę krwi</AnswerA>
+  <AnswerB>Matka nieodpowiednio się odżywia</AnswerB>
+  <AnswerC>Matka ma grupę krwi 0RH+ a ojciec 0Rh-</AnswerC>
+  <AnswerD>Niewielka ilość krwi dostanie się do krwiobiegu matki</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Choroba naczyń wieńcowych najczęściej występuje u osób z:</Tresc>
+  <AnswerA>Niskim ciśnieniem krwi</AnswerA>
+  <AnswerB>Wysokim ciśnieniem krwi</AnswerB>
+  <AnswerC>Anemią</AnswerC>
+  <AnswerD>Hemofilią</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Antygen to:</Tresc>
+  <AnswerA>Synonim terminu "przeciwciało"</AnswerA>
+  <AnswerB>Substancja dezaktywująca gen</AnswerB>
+  <AnswerC>Substancja wywołująca odpowiedź immunologiczną</AnswerC>
+  <AnswerD>Substancja wywołująca miażdżycę</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Za co są odpowiedzialne naczynia włosowate w układzie krwionośnym?</Tresc>
+  <AnswerA>Za wymianę gazową</AnswerA>
+  <AnswerB>Za termoregulację</AnswerB>
+  <AnswerC>Za skurcze mięśni serca</AnswerC>
+  <AnswerD>Za transport tlenu</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile moczu wydala człowiek w ciągu doby?</Tresc>
+  <AnswerA>Ponad 4000 ml</AnswerA>
+  <AnswerB>2500 - 4000 ml</AnswerB>
+  <AnswerC>600 - 2500 ml</AnswerC>
+  <AnswerD>200 - 500 ml</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile litrów krwi przepływa przez nerki w ciągu 1 minuty?</Tresc>
+  <AnswerA>0,5l</AnswerA>
+  <AnswerB>1,5l</AnswerB>
+  <AnswerC>1,2l</AnswerC>
+  <AnswerD>0,2l</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question><Question>
+ <Tresc>Która droga nie jest drogą wydalania zbędnych produktów przemiany materii?</Tresc>
+  <AnswerA>Skóra</AnswerA>
+  <AnswerB>Serce</AnswerB>
+  <AnswerC>Płuca</AnswerC>
+  <AnswerD>Nerki</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jaki jest prawidłowy odczyn moczu?</Tresc>
+  <AnswerA>Kwaśny</AnswerA>
+  <AnswerB>Zasadowy</AnswerB>
+  <AnswerC>Obojętny</AnswerC>
+  <AnswerD>Mocz nie posiada odczynu</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Która z poniższych funkcji nie jest funkcją układu wydalniczego?</Tresc>
+  <AnswerA>Wydala zbędne produkty przemiany materii</AnswerA>
+  <AnswerB>Reguluje ciśnienie</AnswerB>
+  <AnswerC>Reguluje gospodarkę hormonalną</AnswerC>
+  <AnswerD>Gromadzi kał</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Które części nefronu znajdują się całkowicie w korze nerki?</Tresc>
+  <AnswerA>Kanalik dystalny, kanalik zbiorczy i torebka Bowmana</AnswerA>
+  <AnswerB>Kłębek Malphiego, torebka Bowmana i kanalik dystalny</AnswerB>
+  <AnswerC>Kanalik proksymalny, pętla Henlego i kanalik dystalny</AnswerC>
+  <AnswerD>Pętla Henlego, kanalik proksymalny i kłębek Malphiego</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Istotę szarą tworzą:</Tresc>
+  <AnswerA>Neuryty</AnswerA>
+  <AnswerB>Dendryty</AnswerB>
+  <AnswerC>Jądra podkorowe</AnswerC>
+  <AnswerD>Ciała komórkowe neuronów</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>W rdzeniu kręgowym istota biała położona jest:</Tresc>
+  <AnswerA>Na zewnątrz</AnswerA>
+  <AnswerB>Wewnątrz</AnswerB>
+  <AnswerC>Różnorodnie</AnswerC>
+  <AnswerD>Nie występuje tam</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>W skład istoty białej nie wchodzą:</Tresc>
+  <AnswerA>wWłókna nerwowe</AnswerA>
+  <AnswerB>Naczynia krwionośne</AnswerB>
+  <AnswerC>Komórki glejowe</AnswerC>
+  <AnswerD>Ciała komórkowe neuronów</AnswerD>
+  <PoprawnaOdpowiedz>D</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Zadaniem płynu mózgowo-rdzeniowego jest:</Tresc>
+  <AnswerA>Podwyższanie temperatury mózgu</AnswerA>
+  <AnswerB>Utrzymanie ciśnienia wewnątrzczaszkowego</AnswerB>
+  <AnswerC>Przenoszenie informacji nerwowych między rdzeniem kręgowym i mózgiem</AnswerC>
+  <AnswerD>Roznoszenie nowych neuronów</AnswerD>
+  <PoprawnaOdpowiedz>B</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Powoduje załamywanie się promieni wpadających do oka i powstawanie obrazu na jego tylnej ścianie:</Tresc>
+  <AnswerA>Twardówka</AnswerA>
+  <AnswerB>Rogówka</AnswerB>
+  <AnswerC>Soczewka</AnswerC>
+  <AnswerD>Naczyniówka</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Odpowiedzialny za równowagę błędnik znajduje się w:</Tresc>
+  <AnswerA>Oku</AnswerA>
+  <AnswerB>Prawej półkuli mózgu</AnswerB>
+  <AnswerC>Uchu</AnswerC>
+  <AnswerD>Lewej półkuli mózgu</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Przepona jest:</Tresc>
+  <AnswerA>Mięśniem</AnswerA>
+  <AnswerB>Chrząstką</AnswerB>
+  <AnswerC>Gruczołem</AnswerC>
+  <AnswerD>Narządem</AnswerD>
+  <PoprawnaOdpowiedz></PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Ile mierzy jelito cienki u człowieka?</Tresc>
+  <AnswerA>2,6 m</AnswerA>
+  <AnswerB>76 cm</AnswerB>
+  <AnswerC>5,6 m </AnswerC>
+  <AnswerD>1,2 m</AnswerD>
+  <PoprawnaOdpowiedz>A</PoprawnaOdpowiedz>
+ </Question>
+<Question>
+ <Tresc>Jakie naczynia prowadzą krew odżywczą dla płuc?</Tresc>
+  <AnswerA>Żyły płucne i żyły oskrzelowe</AnswerA>
+  <AnswerB>Żyły płucne i pień płucny</AnswerB>
+  <AnswerC>Gałęzie tętnicze oskrzelowe i żył oskrzelowe</AnswerC>
+  <AnswerD>Pień płucny i żyły oskrzelowe</AnswerD>
+  <PoprawnaOdpowiedz>C</PoprawnaOdpowiedz>
+ </Question>
+
+</ListOfQuestions>
