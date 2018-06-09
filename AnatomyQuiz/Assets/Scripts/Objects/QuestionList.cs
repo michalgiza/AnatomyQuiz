@@ -12,7 +12,7 @@ public class QuestionList : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        string path = @"FileXML\questions.xml";
+        string path = @"Questions\plik.xml";
         
         ReadXmlFile(path);
         Singleton.QuizManager.questions = this.questions;
