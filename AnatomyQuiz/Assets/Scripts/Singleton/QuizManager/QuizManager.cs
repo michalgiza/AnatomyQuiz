@@ -59,6 +59,7 @@ public class QuizManager : BaseSingletonObject
     {
         unAnsweredQuestions = questions.ToList();
     }
+
     public void AddPointsToScore(int points)
     {
         score += points;

@@ -8,11 +8,12 @@ public class LivesContainer : MonoBehaviour
 	void Start ()
     {
         Singleton.QuizManager.OnBadAnswer += KillOneHeart;
+        ResetHeart();
     }
 
     private void KillOneHeart()
     {
-        foreach (Transform heart in transform)
+        foreach (Transform heart in this.transform)
         {
             if (heart.gameObject.activeInHierarchy)
             {
@@ -20,5 +21,17 @@ public class LivesContainer : MonoBehaviour
                 break;
             }
         }
+    }
+    private void ResetHeart()
+    {
+        foreach (Transform heart in transform)
+        {
+            heart.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        Singleton.QuizManager.OnBadAnswer -= KillOneHeart;
     }
 }
