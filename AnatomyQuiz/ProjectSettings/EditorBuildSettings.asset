@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HighScore.unity
     guid: 034a832583c9191418f7f6fd8e90e48d
+  - enabled: 1
+    path: Assets/Scenes/StartScreenScene.unity
+    guid: f47b3c7856876ca4f92ea10d8dd816b6

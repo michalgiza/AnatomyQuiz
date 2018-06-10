@@ -34,10 +34,13 @@ public class QuizManager : BaseSingletonObject
         isCorrect = false;
         currentAnswerTimeEnd = false;
         QuestionOffset = 2f;
+        
     }
 
+    
     public Question GetRandomQuestion()
     {
+
         if (unAnsweredQuestions.Count != 0)
         {
             int randomIndex = Random.Range(0, unAnsweredQuestions.Count - 1);
@@ -52,6 +55,10 @@ public class QuizManager : BaseSingletonObject
         return currentQuestion;
     }
 
+    public void ResetUnansweredQuestions()
+    {
+        unAnsweredQuestions = questions.ToList();
+    }
     public void AddPointsToScore(int points)
     {
         score += points;

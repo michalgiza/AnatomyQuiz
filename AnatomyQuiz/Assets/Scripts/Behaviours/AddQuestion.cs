@@ -16,6 +16,7 @@ public class AddQuestion : MonoBehaviour {
 	public InputField AnswearC;
 	public InputField AnswearD;
     public Dropdown CorrectAnswer;
+    public Dropdown MainSubject;
     public GameObject DialogBox;
 
     //
@@ -29,8 +30,9 @@ public class AddQuestion : MonoBehaviour {
         }
         string path = @"FileXML\questions.xml";
         int correctAnswerInt = CorrectAnswer.value;
+        int mainSubject = MainSubject.value+1;
 
-        xmlDocumentDataObject.SaveNewQuestion(path, Content.text, AnswearA.text, AnswearB.text, AnswearC.text, AnswearD.text, correctAnswerInt);
+        xmlDocumentDataObject.SaveNewQuestion(path, Content.text, AnswearA.text, AnswearB.text, AnswearC.text, AnswearD.text, correctAnswerInt,mainSubject);
         
         SceneManager.LoadScene("MenuScene");
 

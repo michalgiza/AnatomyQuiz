@@ -5,19 +5,15 @@ using UnityEngine;
 
 public class Question
 {
-    [XmlElement("Tresc")]
     public string question;
-    [XmlElement("AnswerA")]
     public string answerA;
-    [XmlElement("AnswerB")]
     public string answerB;
-    [XmlElement("AnswerC")]
     public string answerC;
-    [XmlElement("AnswerD")]
-    public string answerD;
-    [XmlElement("PoprawnaOdpowiedz")]
-    public string correctAnswerSign;
     
+    public string answerD;
+    
+    public string correctAnswerSign;
+    public int mainSubjectSign;
     public PossibleAnswer correctAnswer;
     
     public MainSubject subjectOfAQuestion;
@@ -32,10 +28,10 @@ public class Question
 
     public enum MainSubject
     {
-        Brain,
-        Heart,
-        RespiratorySystem,
-        ExcretorySystem,
-        DigestiveSystem
+        NervousSystem = 1,
+        CirculatorySystem = 2,
+        RespiratorySystem = 3,
+        AlimentarySystem = 4,
+        SkeletalSystem= 5
     }
 }

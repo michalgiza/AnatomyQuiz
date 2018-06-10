@@ -20,9 +20,6 @@ public class QuestionList : MonoBehaviour
         questions=xmlDocumetnDataObject.GetAllQuestions(path);
         Singleton.QuizManager.questions = this.questions;
 	}
-
-    //
-    
     
     }
 

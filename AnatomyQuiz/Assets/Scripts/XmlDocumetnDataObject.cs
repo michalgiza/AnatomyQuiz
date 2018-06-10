@@ -25,6 +25,23 @@ public class XmlDocumetnDataObject : IXmlDocumentDataObject {
         StringToEnum(questionsArray);
         return questionsArray;
     }
+    public Question[] GetQuestionsAbout(string path, Question.MainSubject mainSubject)
+    {
+        var doc = xmlDocumentRepository.LoadXml(path);
+        var questionsArray = doc.Descendants("Question").Select(x => new Question
+        {
+            question = x.Element("Tresc").Value,
+            answerA = x.Element("AnswerA").Value,
+            answerB = x.Element("AnswerB").Value,
+            answerC = x.Element("AnswerC").Value,
+            answerD = x.Element("AnswerD").Value,
+            correctAnswerSign = x.Element("PoprawnaOdpowiedz").Value,
+            mainSubjectSign = Convert.ToInt32(x.Element("Typ").Value)
+
+        }).Where(x=>x.mainSubjectSign ==(int)mainSubject).ToArray();
+        StringToEnum(questionsArray);
+        return questionsArray;
+    }
 
     public bool GetMax(string path,int score)
     {
@@ -65,11 +82,12 @@ public class XmlDocumetnDataObject : IXmlDocumentDataObject {
         xmlDocumentRepository.Save(path, xdoc);
 
     }
-    public void SaveNewQuestion(string path, string Content, string AnswearA, string AnswearB, string AnswearC, string AnswearD, int correctAnswerInt)
+    public void SaveNewQuestion(string path, string Content, string AnswearA, string AnswearB, string AnswearC, string AnswearD, int correctAnswerInt, int mainSubjectSign)
     {
         Question question = new Question()
         {
             correctAnswerSign = CorrectAnswerIntToString(correctAnswerInt),
+            mainSubjectSign = mainSubjectSign,
             question = Content,
             answerA = AnswearA,
             answerB = AnswearB,
@@ -86,7 +104,7 @@ public class XmlDocumetnDataObject : IXmlDocumentDataObject {
         XmlElement xAnswerC = xdoc.CreateElement("AnswerC");
         XmlElement xAnswerD = xdoc.CreateElement("AnswerD");
         XmlElement xCorrectAnswer = xdoc.CreateElement("PoprawnaOdpowiedz");
-
+        XmlElement xMainSubject = xdoc.CreateElement("Typ");
 
         xTresc.InnerText = question.question;
         xAnswerA.InnerText = question.answerA;
@@ -94,6 +112,7 @@ public class XmlDocumetnDataObject : IXmlDocumentDataObject {
         xAnswerC.InnerText = question.answerC;
         xAnswerD.InnerText = question.answerD;
         xCorrectAnswer.InnerText = question.correctAnswerSign;
+        xMainSubject.InnerText = question.mainSubjectSign.ToString();
 
         xelement.AppendChild(xTresc);
         xelement.AppendChild(xAnswerA);
@@ -101,6 +120,7 @@ public class XmlDocumetnDataObject : IXmlDocumentDataObject {
         xelement.AppendChild(xAnswerC);
         xelement.AppendChild(xAnswerD);
         xelement.AppendChild(xCorrectAnswer);
+        xelement.AppendChild(xMainSubject);
 
         xdoc.DocumentElement.AppendChild(xelement);
         xmlDocumentRepository.Save(path, xdoc);
