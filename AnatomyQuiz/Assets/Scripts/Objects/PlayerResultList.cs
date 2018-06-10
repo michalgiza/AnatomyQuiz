@@ -15,6 +15,7 @@ public class PlayerResultList : MonoBehaviour {
     public TextMeshProUGUI PlayerNameListView;
     public TextMeshProUGUI DateListView;
     public TextMeshProUGUI ScoreListView;
+    string path = @"FileXML\highScore.xml";
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class PlayerResultList : MonoBehaviour {
         {
             PlayerName = x.Element("PlayerName").Value,
             Date = x.Element("Date").Value,
-            Score = x.Element("Score").Value,
+            Score = Convert.ToInt32(x.Element("Score").Value)
 
         }).OrderBy(x => x.Score).ToArray();
         Array.Reverse(reslutsArray);
@@ -75,7 +76,7 @@ public class PlayerResultList : MonoBehaviour {
         DateListView.text = Dates;
         ScoreListView.text = Scores;
 
-
-
     }
+
+    
 }
